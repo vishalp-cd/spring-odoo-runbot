@@ -96,7 +96,7 @@ RUN apt-get update \
     </template>
 
     <template id="runbot.docker_install_odoo_python_requirements">
-ADD https://raw.githubusercontent.com/odoo/odoo/<t t-esc="values['odoo_branch']"/>/requirements.txt /root/requirements.txt
+ADD https://github.com/vishalp-cd/spring-odoo-runbot/blob/<t t-esc="values['odoo_branch']"/>/requirements.txt /root/requirements.txt
 RUN <t t-esc="values['python_version']"/> -m pip install --no-cache-dir setuptools wheel &amp;&amp; \
     <t t-esc="values['python_version']"/> -m pip install --no-cache-dir -r /root/requirements.txt &amp;&amp; \
     <t t-esc="values['python_version']"/> -m pip install --no-cache-dir <t t-esc="values['additional_pip']"/>
