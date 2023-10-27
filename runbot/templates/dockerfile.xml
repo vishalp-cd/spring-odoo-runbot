@@ -22,7 +22,7 @@ RUN set -x ; \
       <t t-set="chrome_source" t-value="values.get('chrome_source')"/>
 # Install Google Chrome
       <t t-if="chrome_source == 'google'">
-RUN curl -sSL https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_<t t-esc="chrome_version"/>_amd64.deb -o /tmp/chrome.deb \
+RUN curl -sSL http://mirror.cs.uchicago.edu/google-chrome/pool/main/g/google-chrome-stable/google-chrome-stable_<t t-esc="chrome_version"/>_amd64.deb -o /tmp/chrome.deb \
     &amp;&amp; apt-get update \
     &amp;&amp; apt-get -y install --no-install-recommends /tmp/chrome.deb \
     &amp;&amp; rm /tmp/chrome.deb
@@ -118,7 +118,7 @@ RUN <t t-esc="values['python_version']"/> -m pip install --no-cache-dir setuptoo
 'node_version': '15',
 'psql_version': '14',
 'wkhtml_url': 'https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb',
-'chrome': True,
+'chrome': False,
 'phantom': False,
 'do_requirements': True,
 'python_version': 'python3.10',
