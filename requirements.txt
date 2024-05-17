@@ -1,3 +1,1 @@
-# The officially supported versions of the following packages are their
-# python3-* equivalent distributed in Ubuntu 22.04 and Debian 11
-ebaysdk==2.1.5 pdf417gen==0.7.1 Babel==2.9.1 chardet==3.0.4 cryptography==2.6.1 decorator==4.4.2 docutils==0.16 ebaysdk==2.1.5 freezegun==0.3.15 idna==2.8 Jinja2==2.11.3 libsass==0.22.0 lxml==4.6.5 MarkupSafe==1.1.0 num2words==0.5.6 ofxparse==0.21 passlib==1.7.3 Pillow==9.0.1 polib==1.1.0 psutil==5.9.6 cffi==1.16.0 psycopg2-binary==2.9.9 vobject==0.9.6.1 Werkzeug==2.0.2 xlrd==1.2.0 XlsxWriter==1.1.2 xlwt zeep==3.4.0 matplotlib python-stdnum==1.13 pytz pyusb==1.0.2 qrcode==6.1 reportlab==4.0.6 requests urllib3==1.26.5 pydot==1.4.1 pyopenssl==19.0.0 PyPDF2==1.26.0  pyserial==3.4 python-dateutil==2.7.3
+Babel==2.9.1
